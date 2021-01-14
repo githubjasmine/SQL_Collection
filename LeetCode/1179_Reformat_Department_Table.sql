@@ -1,7 +1,8 @@
 -- https://leetcode.com/problems/reformat-department-table/
 
 -- Originally, my solution would be using left joins to create multiple cols:
-select distinct d.id, Jan_Revenue, Feb_Revenue, Mar_Revenue, Apr_Revenue, May_Revenue, Jun_Revenue, Jul_Revenue, Aug_Revenue, Sep_Revenue, Oct_Revenue, Nov_Revenue, Dec_Revenue
+select distinct d.id, Jan_Revenue, Feb_Revenue, Mar_Revenue, Apr_Revenue,
+May_Revenue, Jun_Revenue, Jul_Revenue, Aug_Revenue, Sep_Revenue, Oct_Revenue, Nov_Revenue, Dec_Revenue
 from department d
 left join (select id, revenue Jan_Revenue
           from department
